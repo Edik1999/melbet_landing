@@ -1,0 +1,26 @@
+.btn{
+    background: var(--main-color);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    width: 183px;
+    padding: 14px 0;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    line-height: 13px;
+    @include btn_anim;
+
+    &--white{
+        color: #2A2B30;
+        background: #FFFFFF;
+        border: 1px solid #6F6D7B;
+    }
+
+    &--size-big{
+        width: 370px;
+        padding: 16.5px 0;
+    }
+}
+

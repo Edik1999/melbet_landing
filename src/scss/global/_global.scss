@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-family: 'Gilroy', sans-serif;
+	font-weight: 700;
+}
+
+:root{
+	--main-text-color: #FFC74B;
+	--bet-color: #FFBC00;
+	--title-shadow-color: #FFB94E;
+	--number-color: #EFB000;
+}
+
+.flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.--just-space {
+	justify-content: space-between;
+}
+
+.--just-center {
+	justify-content: center;
+}
+
+.--just-end {
+	justify-content: flex-end;
+}
+
+.--align-str {
+	align-items: stretch;
+}
+
+.--align-center {
+	align-items: center;
+}
+
+.--align-end {
+	align-items: flex-end;
+}
+
+.--dir-col {
+	flex-direction: column;
+}
+
+html {
+	font-size: 30px;
+}
+
+html,
+body {
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	font-size: 1rem;
+	line-height: 37.3px;
+	color: #fff;
+	background-color: #010101;
+}
+
+.container {
+	@include container(1170px, 0)
+}
+
+.colored-text {
+	color: var(--main-text-color);
+}
+
+.melbet-color {
+	color: var(--bet-color);
+	font-weight: inherit;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.hidden {
+	display: none;
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}

@@ -1,0 +1,44 @@
+.header {
+  @include container(1440px, 130px, 130px);
+  padding-top: 40px;
+  padding-bottom: 33px;
+}
+
+.header-logo {
+  &__img {
+    width: 204px;
+    height: 34px;
+    margin-right: 50px;
+  }
+
+  &__flag {
+    height: 71px;
+  }
+}
+
+.header-links-nav {
+  &__item {
+    margin-right: 61px;
+
+    &:last-of-type {
+      margin-right: 0;
+      height: 29px;
+    }
+  }
+}
+
+.header-links-nav-item {
+  text-decoration: none;
+  color: rgba(255,255,255, .85);
+  font-style: italic;
+  @include trs;
+
+  &:hover {
+    color: rgba(255,255,255, 1);
+  }
+
+  &__img {
+    display: inline-block;
+    height: 100%;
+  }
+}

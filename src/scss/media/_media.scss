@@ -1,0 +1,377 @@
+@media (max-width: 1230px) { 
+
+    .container{
+        max-width: 960px;
+    }
+
+    .banner__title{
+        font-size: 42px;
+    }
+
+    .checkout__images {
+        padding: 0px 27px;
+    }
+
+    .checkout__dots-wrap {
+        margin: 0 10px;
+    }
+
+    .footer__payments-wrapper:nth-of-type(2) {
+        margin: 0 15px;
+    }
+
+    .footer__contacts:first-of-type {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 991px) { 
+    .container{
+        max-width: 720px;
+    }
+
+    .logo {
+        width: 220px;
+        height: 20px;
+    }
+
+    .header{
+        padding: 13px 0;
+        height: 66px;
+    }
+
+    .header.active{
+        padding: 13px 0 20px;
+        height: 187px;
+    }
+
+    .header__wrapper{
+        flex-direction: column;
+    }
+
+    .header__navigation{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+        text-align: right;
+        margin-top: 15px;
+        visibility: hidden;
+        opacity: 0;
+        @include trs(0.2);
+    }
+    
+    .active .header__navigation{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header__burger{
+        display: block;
+    }
+
+    .header__logo-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header__link {
+        margin-right: 0;
+        margin-bottom: 13px;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+
+    .banner {
+        padding: 120px 0;
+    }
+
+    .banner__title{
+        font-size: 33px;
+        line-height: 48px;
+        margin-bottom: 50px;
+    }
+
+    .banner__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .banner__item {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .banner__list{
+        margin-bottom: 60px;
+    }
+
+    .checkout{
+        padding: 90px 0 120px;
+    }
+
+    .checkout__text {
+        margin-bottom: 60px;
+    }
+
+    .checkout__images {
+        padding: 0 10px;
+    }
+
+    .checkout__img {
+        max-width: 90px;
+        height: 90px;
+    }
+
+    .checkout__description {
+        width: calc((100% - 160px)/ 5);
+        font-size: 15px;
+    }
+
+    .checkout__dots-wrap {
+        margin: 0 5px;
+    }
+
+    .ss-main .ss-values .ss-placeholder {
+        font-size: 16px;
+    }
+
+    .ss-content .ss-list .ss-option {
+        font-size: 16px;
+    }
+
+    .input{
+        font-size: 16px;
+    }
+
+    .form__text {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 25px 0;
+    }
+
+    .footer__wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .footer__divider{
+        width: 60px;
+        height: 1px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 767px) { 
+    .container{
+        max-width: 540px;
+    }
+
+    .banner__title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    .banner__item, .banner__text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .checkout {
+        padding: 70px 0 100px;
+    }
+
+    .checkout__title {
+        font-size: 24px;
+        line-height: 26px;
+        word-spacing: 7px;
+        margin-bottom: 25px;
+    }
+
+    .checkout__text {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+
+    .checkout__description-wrapper{
+        display: none;
+    }
+
+    .checkout__description.hidden{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .checkout__dots-wrap{
+        display: none;
+    }
+
+    .checkout__images {
+        padding: 0;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: unset;
+        margin-bottom: 40px;
+    }
+
+    .checkout__img-wrapper{
+        width: 28%;
+        margin-bottom: 20px;
+        text-align: center;
+
+        &.checkout__img-wrapper--without-mb{
+            margin-bottom: 0;
+        }
+    }
+
+    .form__input, .form__select {
+        width: calc((100% - 30px)/ 2);
+    }
+
+    
+    .form__range-wrapper {
+        order: 5;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .form__label {
+        width: calc((100% - 30px)/ 2);
+        order: 4;
+    }
+
+}
+
+@media (max-width: 575px) { 
+    .container{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .logo {
+        width: 180px;
+        height: 16px;
+    }
+
+    .banner__title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .banner__item, .banner__text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .checkout__title {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .checkout__text {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .form__text, .input, .ss-content .ss-list .ss-option, .ss-main .ss-values .ss-placeholder {
+        font-size: 15px;
+    }
+
+    .input {
+        padding: 7px 35px 7px 9px;
+    }
+
+    .ss-main .ss-values .ss-placeholder {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+}
+
+@media (max-width: 510px) {
+    .form__input, .form__select {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form__wrapper{
+        justify-content: center;
+    }
+
+    .form__range-wrapper{
+        order: 4;
+        margin-bottom: 18px;
+    }
+
+    .form__label {
+        order: 5;
+        width: 210px;
+    }
+
+    .btn--size-big{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .checkout__img-wrapper {
+        width: 42%;
+    }
+
+    .btn--white{
+        margin-top: 20px;
+    }
+
+    .banner__list {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 439px) {
+    .banner__btn{
+        width: 75%;
+    }
+
+    .banner__btn:first-of-type {
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width: 377px) {
+    .footer__ico {
+        margin-right: 3px;
+    }
+
+    .footer__payments-wrapper:nth-of-type(2) {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 342px) {
+    .footer{
+        padding: 20px 0;
+        font-size: 12px;
+    }
+
+    .form__text{
+        text-align: left;
+    }
+
+    output.form__text{
+        width: 25px;
+    }
+}
+
+@media (max-width: 325px) {
+    .footer__payments-wrapper:nth-of-type(2) {
+        margin: 0 5px;
+    }
+}
