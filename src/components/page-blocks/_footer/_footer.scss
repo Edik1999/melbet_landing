@@ -1,3 +1,41 @@
 .footer{
+  max-width: 656px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 175px;
+  padding-bottom: 75px;
+}
 
+.footer-list {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    line-height: 25px;
+  }
+}
+
+.footer-list-item {
+  &__logo {
+    width: 138px;
+    height: 23px;
+  }
+
+  &__link {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  &__img {
+    display: block;
+    width: 26px;
+  }
+}
+
+.footer-list-item-link {
+  text-decoration: none;
+
+  &:not(.colored-text) {
+    color: #FFFFFF;
+  }
 }
