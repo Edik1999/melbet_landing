@@ -7,6 +7,7 @@
 }
 
 :root{
+	--bg-color:  #010101;
 	--main-text-color: #FFC74B;
 	--bet-color: #FFBC00;
 	--title-shadow-color: #FFB94E;
@@ -49,6 +50,34 @@
 
 html {
 	font-size: 30px;
+
+	@media (max-width: 1439px) {
+        font-size: 26px;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 24px;
+	}
+
+	@media (max-width: 1023px) {
+		font-size: 22px;
+	}
+
+	@media (max-width: 991px) {
+		font-size: 20px;
+	}
+
+	@media (max-width: 680px) {
+		font-size: 18px;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 16px;
+	}
+
+	@media (max-width: 420px) {
+		font-size: 14px;
+	}
 }
 
 html,
@@ -62,6 +91,74 @@ body {
 	line-height: 37.3px;
 	color: #fff;
 	background-color: #010101;
+
+	@media (max-width: 1439px) {
+        line-height: 38px;
+    }
+
+	@media (max-width: 1023px) {
+		line-height: 32px;
+	}
+
+	@media (max-width: 991px) {
+		line-height: 26px;
+	}
+
+	@media (max-width: 680px) {
+		line-height: 24px;
+	}
+
+	@media (max-width: 500px) {
+		line-height: 22px;
+	}
+
+	@media (max-width: 420px) {
+		line-height: 20px;
+	}
+}
+
+.big-text {
+	font-size: 35px;
+	line-height: 42px;
+
+	@media (max-width: 1439px) {
+		font-size: 34px;
+		line-height: 42px;
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 32px;
+		line-height: 40px;
+	}
+
+	@media (max-width: 1023px) {
+		font-size: 30px;
+		line-height: 38px;
+	}
+
+	@media (max-width: 991px) {
+		font-size: 28px;
+		line-height: 36px;
+	}
+
+	@media (max-width: 680px) {
+		font-size: 26px;
+		line-height: 34px;
+	}
+
+	@media (max-width: 500px) {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	@media (max-width: 420px) {
+		font-size: 22px;
+		line-height: 30px;
+	}
+}
+
+img {
+	width: 100%;
 }
 
 .container {
@@ -79,10 +176,6 @@ body {
 
 .text-justify {
 	text-align: justify;
-}
-
-.hidden {
-	display: none;
 }
 
 ul,

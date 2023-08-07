@@ -1,26 +1,15 @@
 .btn{
-    background: var(--main-color);
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    width: 183px;
-    padding: 14px 0;
-    text-align: center;
-    text-transform: uppercase;
+    display: block;
+    max-width: 380px;
+    width: 100%;
+    min-height: 52px;
+    margin-left: auto;
+    padding: 12px 0 11px;
+    line-height: 1.2;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(188deg, var(--main-text-color) 3.26%, var(--main-text-color) 24.11%, #E89D00 42.94%, var(--main-text-color) 66.92%, #F2CC3F 87.31%);
+    color: var(--bg-color);
     cursor: pointer;
-    color: #fff;
-    font-size: 13px;
-    line-height: 13px;
-    @include btn_anim;
-
-    &--white{
-        color: #2A2B30;
-        background: #FFFFFF;
-        border: 1px solid #6F6D7B;
-    }
-
-    &--size-big{
-        width: 370px;
-        padding: 16.5px 0;
-    }
 }
 

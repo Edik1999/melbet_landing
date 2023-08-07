@@ -7,7 +7,7 @@
     "start": "gulp",
     "build": "gulp svg_css && gulp ttf && gulp fonts && gulp style && gulp build_js && gulp rastr && gulp webp && gulp svg_sprite && gulp html"
   },
-  "author": "",
+  "author": "Eduard Chernobrovkin",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.14.2",
