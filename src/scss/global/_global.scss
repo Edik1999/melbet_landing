@@ -93,31 +93,27 @@ body {
 	background-color: #010101;
 
 	@media (max-width: 1439px) {
-        line-height: 30px;
+        line-height: 38px;
     }
 
-	@media (max-width: 1200px) {
-		line-height: 28px;
-	}
-
 	@media (max-width: 1023px) {
-		line-height: 26px;
+		line-height: 32px;
 	}
 
 	@media (max-width: 991px) {
-		line-height: 23px;
+		line-height: 26px;
 	}
 
 	@media (max-width: 680px) {
-		line-height: 20px;
+		line-height: 24px;
 	}
 
 	@media (max-width: 500px) {
-		line-height: 18px;
+		line-height: 22px;
 	}
 
 	@media (max-width: 420px) {
-		line-height: 15px;
+		line-height: 20px;
 	}
 }
 

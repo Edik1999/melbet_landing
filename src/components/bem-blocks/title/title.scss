@@ -7,6 +7,12 @@
   margin-right: auto;
   margin-left: auto;
 
+  &--dark {
+    color: #000000;
+    text-align: left;
+    text-shadow: unset;
+  }
+
   @media (max-width: 1439px) {
     font-size: 110px;
   }
