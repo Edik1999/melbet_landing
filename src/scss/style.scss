@@ -2,10 +2,6 @@
 @import 'global/*.scss';
 @import '../components/**/**/*.scss';
 
-.main {
-  padding-bottom: 600px
-}
-
 .banner {
   @include container(1440px, 0, 0);
 
@@ -132,8 +128,6 @@
     padding: 20px;
     margin-top: 21px;
     margin-left: auto;
-    font-size: 35px;
-    line-height: 32px;
   }
 
   &__btn {
@@ -222,7 +216,6 @@
   &__text {
     max-width: 1080px;
     margin-left: auto;
-    font-size: 35px;
   }
 
   &__instruction {
@@ -263,13 +256,11 @@
   &__text {
     display: inline-block;
     max-width: 280px;
-    font-size: 35px;
-    line-height: 41px;
   }
 
   &__description {
     max-width: 680px;
-    line-height: 36px;
+    max-width: 58%;
   }
 }
 
@@ -305,8 +296,8 @@
     margin-right: auto;
     margin-left: auto;
 
-    &:last-of-type {
-      margin-bottom: 37px;
+    &.colored-text {
+      margin-top: 37px;
     }
   }
 
@@ -338,8 +329,6 @@
 .offer-description {
   &__text {
     max-width: 780px;
-    font-size: 35px;
-    line-height: 45px;
   }
 
   &__img {

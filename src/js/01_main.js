@@ -1,36 +1,63 @@
-document.addEventListener("DOMContentLoaded", () => {
+const form = document.querySelector(".banner-form");
 
-    const form = document.querySelector(".form");
+const postData = async (url, fData) => {
 
-    // Отправка формы
-    const postData = async (url, fData) => {
+    let fetchResponse = await fetch(url, {
+        method: "POST",
+        body: fData
+    });
 
-        // ждём ответ, только тогда наш код пойдёт дальше
-        let fetchResponse = await fetch(url, {
-            method: "POST",
-            body: fData
-        });
+    return await fetchResponse.text();
+};
 
-        // ждём окончания операции
-        return await fetchResponse.text();
-    };
+if (form) {
+    const action = form.getAttribute('action');
 
-    if (form) {
-        form.addEventListener("submit", function (e) {
-            e.preventDefault();
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-            // создание объекта FormData
-            let fData = new FormData(form);
+        let fData = new FormData(form);
 
-            // Отправка на сервер
-            postData("/", fData)
-                .then(fetchResponse => {
-                    console.log(fetchResponse);
-                })
-                .catch(function (error) {
-                    console.log(error);
-                });
-        });
-    }
+        postData(action, fData)
+            .then(fetchResponse => {
+                console.log(fetchResponse);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    });
+}
 
+document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+        e.preventDefault()
+        scrollToForm(70)
+    });
 });
+
+document.querySelectorAll(`a[href^="#"]`).forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        let href = this.getAttribute('href').substring(1);
+
+        scrollToForm(50, href)
+    });
+});
+
+const scrollToForm = (fromTop, href) => {
+    let scrollTarget;
+
+    href
+        ? scrollTarget = document.getElementById(href)
+        : scrollTarget = document.querySelector('.banner-form')
+
+    const topOffset = fromTop;
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
+
+    window.scrollBy({
+        top: offsetPosition,
+        behavior: 'smooth'
+    });
+}

@@ -1,5 +1,6 @@
 .footer{
   max-width: 656px;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
   padding-top: 175px;
@@ -37,5 +38,39 @@
 
   &:not(.colored-text) {
     color: #FFFFFF;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer__list {
+    flex-wrap: wrap;
+  }
+
+  .footer-list__item {
+    width: 50%;
+    text-align: center;
+
+    &:first-of-type, &:nth-of-type(2) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .footer-list-item {
+    &__link {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    &__img {
+
+    }
   }
 }
