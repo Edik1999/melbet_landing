@@ -11,190 +11,234 @@
 	@@include('components/page-blocks/_header/_header.html')
 	<main class="main">
 		<section class="banner">
-			<div class="banner__body banner-body flex --just-space --align-center">
-				<div class="banner__wrapper">
-					<h1 class="banner__title banner-title">Make money in Venezuela with MEL<span class="melbet-color">BET</span>!</h1>
-					<p class="banner__text banner-text text-justify">READY TO MAKE SOME SERIOUS MONEY AND BUILD YOUR EMPIRE? LOOK NO FURTHER THAN MELBET, THE ULTIMATE BETTING SENSATION! WE'RE NOT JUST ABOUT FUN AND GAMES: WE'RE HERE TO TURN YOUR DREAMS INTO STACKS OF GREEN!</p>
-				</div>
-				<form class="banner__form banner-form" action="/" method="post" id="banner-form">
-					<p class="banner-form__title banner-form-title colored-text">BECOME AN AGENT</p>
-					<label class="banner-form__label banner-form-label flex --just-space --align-center">
-						<span class="banner-form__text banner-form-text">name</span>
-						<input class="banner-form__input banner-form-input" name="name" type="text" pattern="^[A-zА-яЁё]+$" required>
-					</label>
-					<label class="banner-form__label banner-form-label flex --just-space --align-center">
-						<span class="banner-form__text banner-form-text">e-mail</span>
-						<input class="banner-form__input banner-form-input" name="email" type="email" required>
-					</label>
-					<label class="banner-form__label banner-form-label flex --just-space --align-center">
-						<span class="banner-form__text banner-form-text">phone</span>
-						<input class="banner-form__input banner-form-input" name="phone" type="phone" pattern="^[0-9]+[0-9]*$" required>
-					</label>
-					<button class="banner-form__btn banner-form-btn colored-text">SEND</button>
+			<div class="banner__body banner-body flex --dir-col --align-center">
+				<h1 class="banner__title banner-title text-center" data-lang="banner1">Profit from partnership with Mel<span class="melbet-color">BET</span> in Venezuela, now.</h1>
+				<form class="banner__form banner-form flex" action="form_catch.php" method="post" id="banner-form">
+					<div class="banner-form__left banner-form-left flex --dir-col">
+						<input class="banner-form__input banner-form-input" placeholder="YOUR NAME*" name="name" type="text" pattern="^[A-zА-яЁё]+$" required>
+						<input class="banner-form__input banner-form-input" placeholder="YOUR E-MAIL*" name="email" type="email" required>
+						<input class="banner-form__input banner-form-input" placeholder="YOUR PHONE NUMBER*" name="phone" type="tel" pattern="^[0-9]+[0-9]*$" required>
+						<p class="banner-form__text banner-form-text" data-lang="banner2">
+							just COMPLETE THE FORM, AND GET READY FOR US TO REACH OUT TO YOU IN NO TIME!
+						</p>
+					</div>
+					<div class="banner-form__right banner-form-right flex --dir-col --just-space --align-center">
+						<p class="banner-form__title banner-form-title text-center" data-lang="banner3">
+							READY TO UNLEASH YOUR EARNING POWER?
+						</p>
+						<button class="banner-form__btn banner-form-btn flex --just-space --align-center">
+							<span class="banner-form-btn__text banner-form-btn-text" data-lang="BECOME AN AGENT">BECOME AN AGENT</span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
+								<path d="M10.8839 10.8839C11.372 10.3957 11.372 9.60427 10.8839 9.11612L2.92893 1.16117C2.44078 0.67301 1.64932 0.67301 1.16117 1.16117C0.67301 1.64932 0.67301 2.44078 1.16117 2.92893L8.23223 10L1.16117 17.0711C0.67301 17.5592 0.67301 18.3507 1.16117 18.8388C1.64932 19.327 2.44078 19.327 2.92893 18.8388L10.8839 10.8839ZM9 11.25L10 11.25L10 8.75L9 8.75L9 11.25Z" fill="white"/>
+							</svg>
+						</button>
+					</div>
 				</form>
+				<p class="banner__text banner-text text-center" data-lang="banner4">
+					UNLOCK THE POTENTIAL FOR SIGNIFICANT EARNINGS WITH MEL<span class="colored-text">BET</span>, — YOUR TOP CHOICE FOR THE DEPENDABLE PAYMENT SOLUTION FOR PLAYERS IN THE REGION. WE'RE NOT JUST ABOUT FUN AND GAMES: WE'RE HERE TO HELP YOU ACHIEVE YOUR FINANCIAL GOALS
+				</p>
 			</div>
 		</section>
 		<section class="info">
-			<div class="info__wrapper flex --just-space">
+			<div class="info__wrapper info-wrapper flex --just-space">
 				<picture class="info__main-img info-main-img">
-					<source srcset="../../../img/cash.webp" type="image/webp">
-					<source srcset="../../../img/cash.png" type="image/png">
-					<img src="../../../img/cash.png" alt="Take your cash">
+					<source srcset="./img/cash.webp" type="image/webp">
+					<source srcset="./img/cash.png" type="image/png">
+					<img src="./img/cash.png" alt="Take your cash">
 				</picture>
 				<div class="info__text-wrapper flex --dir-col --align-end">
 					@@include('./components/bem-blocks/title/title.html', {
-						"class": "info__title info-title",
+						"lang": "info1",
+						"class": "title--shadow info__title info-title",
 						"text": "TEAM CASH",
 						"id": "teamCash",
 					})
-					<p class="info__text info-text text-justify">INTRODUCING OUR GAME-CHANGING COLLABORATION SYSTEM IN THE REALM OF PAYMENT SOLUTIONS- "TEAMCASH" BECOME A PAYMENT AGENT WITH US AND UNLOCK THE DOOR TO A WEALTH OF OPPORTUNITIES. WITH A SMALL UPFRONT INVESTMENT, YOU'LL HAVE THE POWER TO TOP UP AND WITHDRAW FUNDS FROM GAMING ACCOUNTS AT THE SNAP OF A FINGER, ALL WHILE EARNING A JUICY CUT OF THE ACTION!</p>
+					<p class="info__text info-text text-justify" data-lang="info2">
+						Explore our payment system — TeamCash. Be a payment agent and dive into a world of opportunities. Invest a little upfront, and you can easily deposit or withdraw money from gaming accounts quickly. Earning a substantial share of 8% from each deposit and 2% from each withdraw, with Limit/Balance system you can gain up to 40% profit from one investment.
+					</p>
 				</div>
 			</div>
 			<div class="info__checkout info-checkout">
-				<h4 class="info-checkout__title info-checkout-title big-text">CHECK OUT THE INCREDIBLE PERKS OF OUR OFFER:</h4>
-				<div class="info-checkout__features info-checkout-features flex --align-center">
-					<div class="info-checkout-features__wrapper flex --just-center --align-center">
-						<picture class="info-checkout-features__img">
-							<source srcset="../../../img/gold-coin.webp" type="image/webp">
-							<source srcset="../../../img/gold-coin.png" type="image/png">
-							<img src="../../../img/gold-coin.png" alt="Small steps, big stacks!">
+				<h4 class="info-checkout__title info-checkout-title big-text" data-lang="info3">
+					CHECK OUT THE INCREDIBLE PERKS OF OUR OFFER:
+				</h4>
+				<div class="info-checkout__features info-checkout-features flex --align-center --just-space">
+					<div class="info-checkout-features__wrapper info-checkout-features-wrapper info-checkout-features-wrapper--first flex --just-center --align-center">
+						<p class="info-checkout-features__number info-checkout-features-number info-checkout-features-number--first">1</p>
+						<picture class="info-checkout-features__img info-checkout-features-img info-checkout-features-img--first">
+							<source srcset="./img/gold-coin.webp" type="image/webp">
+							<source srcset="./img/gold-coin.png" type="image/png">
+							<img src="./img/gold-coin.png" alt="Small steps, big stacks!">
 						</picture>
 					</div>
-					<p class="info-checkout-features__text text-justify">
-						DIP YOUR TOES WITH A TINY INVESTMENT! WE BELIEVE IN STARTING SMALL, SO YOU DON'T NEED TO BREAK THE BANK TO KICKSTART YOUR MONEY-MAKING JOURNEY. IT'S LIKE THE SAYING GOES, "SMALL STEPS, BIG STACKS!"
+					<p class="info-checkout-features__text info-checkout-features-text text-justify" data-lang="info4">
+						Start making money with a small investment of $50! We believe in taking small steps to build big profits. Become our partner, and trust our reliable regional agent. Your journey to financial success begins – join us now!
 					</p>
 				</div>
-				<div class="info-checkout__features info-checkout-features flex --align-center">
-					<div class="info-checkout-features__wrapper flex --just-center --align-center">
-						<picture class="info-checkout-features__img">
-							<source srcset="../../../img/leave-feedback.webp" type="image/webp">
-							<source srcset="../../../img/leave-feedback.png" type="image/png">
-							<img src="../../../img/leave-feedback.png" alt="Our intuitive interface.">
+				<div class="info-checkout__features info-checkout-features flex --align-center --just-space">
+					<div class="info-checkout-features__wrapper info-checkout-features-wrapper info-checkout-features-wrapper--second flex --just-center --align-center">
+						<p class="info-checkout-features__number info-checkout-features-number info-checkout-features-number--second">2</p>
+						<picture class="info-checkout-features__img info-checkout-features-img info-checkout-features-img--second">
+							<source srcset="./img/leave-feedback.webp" type="image/webp">
+							<source srcset="./img/leave-feedback.png" type="image/png">
+							<img src="./img/leave-feedback.png" alt="Our intuitive interface.">
 						</picture>
 					</div>
-					<p class="info-checkout-features__text text-justify">
-						USER-FRIENDLY INTERFACE? OH, YEAH! OUR INTUITIVE SYSTEM IS SO EASY TO WORK WITH, SO YOU CAN SAY GOODBYE TO CONFUSION AND HELLO TO SMOOTH SAILING TOWARDS YOUR FINANCIAL GOALS!
+					<p class="info-checkout-features__text info-checkout-features-text text-justify" data-lang="info5">
+						Discover a straightforward path with our easy-to-use interface! Navigating towards your goals has never been smoother – no more confusion, just clear sailing.
 					</p>
 				</div>
-				<div class="info-checkout__features info-checkout-features flex --align-center">
-					<div class="info-checkout-features__wrapper flex --just-center --align-center">
-						<picture class="info-checkout-features__img">
-							<source srcset="../../../img/symbol-good.webp" type="image/webp">
-							<source srcset="../../../img/symbol-good.png" type="image/png">
-							<img src="../../../img/symbol-good.png" alt="We've got your back, buddy!">
+				<div class="info-checkout__features info-checkout-features flex --align-center --just-space">
+					<div class="info-checkout-features__wrapper info-checkout-features-wrapper info-checkout-features-wrapper--third flex --just-center --align-center">
+						<p class="info-checkout-features__number info-checkout-features-number info-checkout-features-number--third">3</p>
+						<picture class="info-checkout-features__img info-checkout-features-img info-checkout-features-img--third">
+							<source srcset="./img/symbol-good.webp" type="image/webp">
+							<source srcset="./img/symbol-good.png" type="image/png">
+							<img src="./img/symbol-good.png" alt="We've got your back, buddy!">
 						</picture>
 					</div>
-					<p class="info-checkout-features__text text-justify">
-						NEED BACKUP? WE'VE GOT YOUR BACK, BUDDY! OUR TEAM OF TECH SUPPORTS AND EXPERIENCED MANAGERS IS ON STANDBY, READY TO GUIDE YOU THROUGH ANY HURDLE. THINK OF US AS YOUR PERSONAL CHEERLEADERS, BUT WITH KNOWLEDGE AND EXPERTISE.
+					<p class="info-checkout-features__text info-checkout-features-text text-justify" data-lang="info6">
+						Navigate your financial path with confidence! We've got you covered. Our team of experts is here to assist you with any issue. Think of us as your personal guides, providing lots of useful information.
 					</p>
 				</div>
-				<div class="info-checkout__features info-checkout-features flex --align-center">
-					<div class="info-checkout-features__wrapper flex --just-center --align-center">
-						<picture class="info-checkout-features__img">
-							<source srcset="../../../img/with-money.webp" type="image/webp">
-							<source srcset="../../../img/with-money.png" type="image/png">
-							<img src="../../../img/with-money.png" alt="Why wait for success when you can have it now?">
+				<div class="info-checkout__features info-checkout-features flex --align-center --just-space">
+					<div class="info-checkout-features__wrapper info-checkout-features-wrapper info-checkout-features-wrapper--fourth flex --just-center --align-center">
+						<p class="info-checkout-features__number info-checkout-features-number info-checkout-features-number--fourth">4</p>
+						<picture class="info-checkout-features__img info-checkout-features-img info-checkout-features-img--fourth">
+							<source srcset="./img/with-money.webp" type="image/webp">
+							<source srcset="./img/with-money.png" type="image/png">
+							<img src="./img/with-money.png" alt="Why wait for success when you can have it now?">
 						</picture>
 					</div>
-					<p class="info-checkout-features__text text-justify">
-						WHY WAIT FOR SUCCESS WHEN YOU CAN HAVE IT NOW? WE'RE ALL ABOUT SEIZING THE MOMENT AND GRABBING LIFE BY THE BETTING ODDS. SO, DITCH THE PROCRASTINATION AND JUMP ABOARD THE MONEY TRAIN.
+					<p class="info-checkout-features__text info-checkout-features-text text-justify" data-lang="info7">
+						Don't wait for your opportunity! We're all about capturing the moment and taking control of your financial future. It's time to leave hesitation behind and hop on the path to financial success.
 					</p>
 				</div>
-				@@include('./components/bem-blocks/button/button.html', {
-					"class": "info-checkout__btn info-checkout-btn",
-					"text": "FIND OUT MORE"
-				})
+				<div class="info-checkout__wrapper info-checkout-wrapper">
+					@@include('./components/bem-blocks/button/button.html', {
+						"lang": "info8",
+						"class": "info-checkout__btn info-checkout-btn",
+						"text": "FIND OUT MORE",
+						"form": "info-checkout-form"
+					})
+					@@include('./components/bem-blocks/form/form.html', {
+						"class": "info-checkout__form info-checkout-form",
+						"id": "info-checkout-form"
+					})
+				</div>
 			</div>
 		</section>
 		<section class="howto">
 			@@include('./components/bem-blocks/title/title.html', {
+				"lang": "how1",
 				"class": "title--dark howto__title howto-title",
 				"text": "HOW TO BECOME AN AGENT?",
 				"id": "howTo"
 			})
-			<div class="howto__wrapper">
-				<p class="howto__text howto-text text-justify big-text">
+			<div class="howto__wrapper howto-wrapper">
+				<p class="howto__text howto-text text-justify big-text" data-lang="how2">
 					COMPLETE THE VERIFICATION PROCESS, AND MELBET, THE LEADING BOOKMAKER, WILL GRANT YOU THE AGENT STATUS.
 				</p>
-				<div class="howto__instruction howto-instruction flex --just-space --align-center">
+				<div class="howto__instruction howto-instruction">
 					<div class="howto-instruction__step howto-instruction-step flex --align-center">
 						<span class="howto-instruction__number howto-instruction-number">1</span>
-						<span class="howto-instruction__text big-text">AUTHENTICATE AND MAKE YOUR FIRST DEPOSIT</span>
+						<span class="howto-instruction__text big-text" data-lang="how3">AUTHENTICATE AND MAKE YOUR FIRST DEPOSIT</span>
 					</div>
-					<p class="howto-instruction__description text-justify">
+					@@include('./components/bem-blocks/_sprite/_sprite.html', {
+						"class": "howto-instruction__arrow howto-instruction-arrow howto-instruction-arrow--first",
+						"id": "Arrow2",
+					})
+					<p class="howto-instruction__description text-justify" data-lang="how4">
 						After verification, you will need to confirm your identity on the MelBet website. The next step is to obtain your unique agent account, where deposits for player account top-ups will be made.
 					</p>
 				</div>
-				<div class="howto__instruction howto-instruction flex --just-space --align-center">
+				<div class="howto__instruction howto-instruction">
 					<div class="howto-instruction__step howto-instruction-step flex --align-center">
 						<span class="howto-instruction__number howto-instruction-number">2</span>
-						<span class="howto-instruction__text big-text">DOWNLOAD AND INSTALL THE APPLICATION</span>
+						<span class="howto-instruction__text big-text" data-lang="how5">DOWNLOAD AND INSTALL THE APPLICATION</span>
 					</div>
-					<p class="howto-instruction__description text-justify">
+					@@include('./components/bem-blocks/_sprite/_sprite.html', {
+						"class": "howto-instruction__arrow howto-instruction-arrow howto-instruction-arrow--second",
+						"id": "Arrow3",
+					})
+					<p class="howto-instruction__description text-justify" data-lang="how6">
 						Our manager will send you a download link for the mobile application. To ensure smooth operation, you will need an Android smartphone running OS version 4.4 or higher.
 					</p>
 				</div>
-				<div class="howto__instruction howto-instruction flex --just-space --align-center">
+				<div class="howto__instruction howto-instruction">
 					<div class="howto-instruction__step howto-instruction-step flex --align-center">
 						<span class="howto-instruction__number howto-instruction-number">3</span>
-						<span class="howto-instruction__text big-text">START ENGAGING WITH PLAYERS</span>
+						<span class="howto-instruction__text big-text" data-lang="how7">START ENGAGING WITH PLAYERS</span>
 					</div>
-					<p class="howto-instruction__description text-justify">
+					@@include('./components/bem-blocks/_sprite/_sprite.html', {
+						"class": "howto-instruction__arrow howto-instruction-arrow howto-instruction-arrow--third",
+						"id": "Arrow4",
+					})
+					<p class="howto-instruction__description text-justify" data-lang="how8">
 						Make sure they have a gaming account on MelBet.
 					</p>
 				</div>
-				<div class="howto__instruction howto-instruction flex --just-space --align-center">
+				<div class="howto__instruction howto-instruction">
 					<div class="howto-instruction__step howto-instruction-step flex --align-center">
 						<span class="howto-instruction__number howto-instruction-number">4</span>
-						<span class="howto-instruction__text big-text">ASSIST PLAYERS WITH SEAMLESS ACCOUNT TOP-UPS</span>
+						<span class="howto-instruction__text big-text" data-lang="how9">ASSIST PLAYERS WITH SEAMLESS ACCOUNT TOP-UPS</span>
 					</div>
-					<p class="howto-instruction__description text-justify">
-						You will have the ability to swiftly process account top-ups. Utilize the deposited funds to transfer money from the agent account to player accounts.
+					@@include('./components/bem-blocks/_sprite/_sprite.html', {
+						"class": "howto-instruction__arrow howto-instruction-arrow howto-instruction-arrow--fourth",
+						"id": "Arrow5",
+					})
+					<p class="howto-instruction__description text-justify" data-lang="how10">
+						Easily handle account top-ups and quickly transfer funds from the agent account to player accounts using the deposited funds.
 					</p>
 				</div>
-				<div class="howto__instruction howto-instruction flex --just-space --align-center">
+				<div class="howto__instruction howto-instruction">
 					<div class="howto-instruction__step howto-instruction-step flex --align-center">
 						<span class="howto-instruction__number howto-instruction-number">5</span>
-						<span class="howto-instruction__text big-text">EARN COMMISSIONS</span>
+						<span class="howto-instruction__text big-text" data-lang="how11">EARN COMMISSIONS</span>
 					</div>
-					<p class="howto-instruction__description text-justify">
-						Receive a commission of 3-5% for deposits and 2% for withdrawals. Your final earnings will depend on regional specifics and other factors. Detailed information will be available after completing all the necessary details.
+					<p class="howto-instruction__description howto-instruction-description--wide text-justify" data-lang="how12">
+						You profit 8% from every deposit and 2% from every withdraw. Make it even more with the Limit/Balance system, allowing you to reinvest the same deposit multiple times, potentially gaining up to 40% profit from a single investment.
 					</p>
 				</div>
 			</div>
 		</section>
 		<section class="offer">
 			<div class="offer__background">
-				<p class="offer__text offer-text text-justify">
+				<p class="offer__text offer-text text-justify" data-lang="offer1">
 					Seize this opportunity to become an agent and elevate your status with MelBet. Join us in providing exceptional service to players and reaping the rewards of a thriving partnership.
 				</p>
 			</div>
-			<p class="offer__text offer-text text-justify colored-text">
-				Let's embark on this journey together, and together, we'll achieve unparalleled success!
+			<p class="offer__text offer-text offer-text--indented text-justify" data-lang="offer2">
+				Let's start this journey together, and together, we'll achieve unmatched success!
 			</p>
 			@@include('./components/bem-blocks/title/title.html', {
+				"lang": "offer3",
 				"class": "offer__title offer-title",
-				"text": "LET'S GET IT STARTED NOW"
+				"text": "LET'S GET IT STARTED <span class='melbet-color'>NOW</span>",
+				"id": "offer"
 			})
-			<div class="offer__description offer-description flex --just-space --align-center">
-				<p class="offer-description__text offer-description-text text-justify big-text">
-					GET READY TO UNLOCK THE DOORS TO PROSPERITY, MY FRIEND! JOIN FORCES WITH MELBET AND EMBARK ON AN ADVENTURE THAT WILL LEAVE YOU ROLLING IN CASH. IT'S TIME TO MAKE THOSE DREAMS A REALITY AND BECOME THE MASTER OF YOUR FINANCIAL DESTINY!
-				</p>
+			<div class="offer__description offer-description flex --just-end">
 				<picture class="offer-description__img">
-					<source srcset="../../../img/man.webp" type="image/webp">
-					<source srcset="../../../img/man.png" type="image/png">
-					<img src="../../../img/man.png" alt="Make cash with your phone.">
+					<source srcset="./img/man1.webp" type="image/webp">
+					<source srcset="./img/man1.png" type="image/png">
+					<img src="./img/man1.png" alt="Make cash with your phone.">
 				</picture>
+				<p class="offer-description__text offer-description-text" data-lang="offer4">
+					SUCCESS LOVES CONFIDENT AND MOTIVATED. GEAR UP AND START YOUR WEALTH JOURNEY TOGETHER WITH US.
+				</p>
 			</div>
-			<div class="offer__last-chance offer-last-chance">
-				<span class="offer-last-chance__text">
-					REMEMBER, SUCCESS LOVES THE BOLD AND THE MOTIVATED. SO, GEAR UP,  AND LET'S CONQUER THE WORLD OF WEALTH TOGETHER!
-				</span>
+			<div class="offer__wrapper offer-wrapper">
+				@@include('./components/bem-blocks/form/form.html', {
+					"class": "offer__form offer-form",
+					"id": "offer-form"
+				})
+				@@include('./components/bem-blocks/button/button.html',{
+					"lang": "offer5",
+					"class": "offer__btn offer-btn",
+					"text": "START NOW",
+					"form": "offer-form"
+				})
 			</div>
-			@@include('./components/bem-blocks/button/button.html',{
-				"class": "offer__btn offer-btn",
-				"text": "START NOW"
-			})
 		</section>
 	</main>
 	@@include('components/page-blocks/_footer/_footer.html')

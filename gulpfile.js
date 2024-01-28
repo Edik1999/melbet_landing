@@ -12,14 +12,14 @@ exports.rastr = tasks.rastr;
 exports.webp = tasks.webp;
 exports.svg_sprite = tasks.svg_sprite;
 exports.ttf = tasks.ttf;
-exports.ttf2 = tasks.ttf2;
+// exports.ttf2 = tasks.ttf2;
 exports.bs_html = tasks.bs_html;
 exports.watch = tasks.watch;
 
 exports.default = gulp.parallel(
   exports.svg_css,
   exports.ttf,
-  exports.ttf2,
+  // exports.ttf2,
   exports.fonts,
   exports.style,
   exports.dev_js,

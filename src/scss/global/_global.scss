@@ -67,6 +67,10 @@ html {
 		font-size: 20px;
 	}
 
+	@media (max-width: 767px) {
+		font-size: 19px;
+	}
+
 	@media (max-width: 680px) {
 		font-size: 18px;
 	}
@@ -84,81 +88,27 @@ html,
 body {
 	min-height: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 
 body {
 	font-size: 1rem;
-	line-height: 37.3px;
+	line-height: 1.2rem;
 	color: #fff;
 	background-color: #010101;
-
-	@media (max-width: 1439px) {
-        line-height: 38px;
-    }
-
-	@media (max-width: 1023px) {
-		line-height: 32px;
-	}
-
-	@media (max-width: 991px) {
-		line-height: 26px;
-	}
-
-	@media (max-width: 680px) {
-		line-height: 24px;
-	}
-
-	@media (max-width: 500px) {
-		line-height: 22px;
-	}
-
-	@media (max-width: 420px) {
-		line-height: 20px;
-	}
 }
 
 .big-text {
-	font-size: 35px;
-	line-height: 42px;
-
-	@media (max-width: 1439px) {
-		font-size: 34px;
-		line-height: 42px;
-	}
-
-	@media (max-width: 1200px) {
-		font-size: 32px;
-		line-height: 40px;
-	}
-
-	@media (max-width: 1023px) {
-		font-size: 30px;
-		line-height: 38px;
-	}
-
-	@media (max-width: 991px) {
-		font-size: 28px;
-		line-height: 36px;
-	}
-
-	@media (max-width: 680px) {
-		font-size: 26px;
-		line-height: 34px;
-	}
-
-	@media (max-width: 500px) {
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	@media (max-width: 420px) {
-		font-size: 22px;
-		line-height: 30px;
-	}
+	font-size: 1.16667rem;
+	line-height: 1.4rem;
 }
 
 img {
 	width: 100%;
+}
+
+button {
+	-webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -176,6 +126,10 @@ img {
 
 .text-justify {
 	text-align: justify;
+}
+
+.text-center {
+	text-align: center;
 }
 
 ul,

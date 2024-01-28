@@ -1,0 +1,156 @@
+.form {
+  max-width: 480px;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 40px;
+  padding: 20px 26px 26px 20px;
+  color: #000000;
+  background: linear-gradient(260deg, #FFC74B -4.36%, #FFC74B 25.54%, #E89D00 52.53%, #FFC74B 86.93%, #F2CC3F 116.16%);
+  @include trs(0.2);
+
+  &.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__close {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    @include trs(0.2);
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    max-width: 87%;
+    margin: 0 auto 22px;
+    text-transform: uppercase;
+
+    @media (max-width: 500px) {
+      max-width: 71%;
+    }
+  }
+
+  &__label {
+    margin-bottom: 17px;
+
+    &:last-of-type {
+      margin-bottom: 22px;
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  &__text {
+    font-size: 0.8333rem;
+    line-height: 0.8rem;
+
+    @media (max-width: 500px) {
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+
+  &__input {
+    max-width: 345px;
+    width: 100%;
+    height: 45px;
+    padding: 10px 12px;
+    font-size: 24px;
+
+    @media (max-width: 1023px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 500px) {
+      max-width: 100%;
+      height: 40px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    max-width: 345px;
+    width: 100%;
+    height: 52px;
+    padding: 0;
+    font-size: 1.5rem;
+    line-height: 1.7333rem;
+    margin-left: auto;
+
+    @media (max-width: 500px) {
+      max-width: 100%;
+      height: 48px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    width: calc(100% - 50px);
+  }
+
+  @media (max-width: 500px) {
+    padding: 20px;
+  }
+
+  @media (max-width: 420px) {
+    width: calc(100% - 30px);
+  }
+}
+
+.form-close {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.form-title {
+  text-align: center;
+  user-select: none;
+}
+
+.form-input {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.40);
+  border-radius: 10px;
+  outline: none;
+  color: #000000;
+}
+
+.form-text {
+  user-select: none;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.form-btn {
+  border: none;
+  border-radius: 10px;
+  background: var(--bg-color);
+  cursor: pointer;
+  text-transform: uppercase;
+  @include trs;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+html[lang="es"] {
+  .form {
+    max-width: 513px;
+  }
+}

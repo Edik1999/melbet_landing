@@ -1,0 +1,20 @@
+<form class="form @@class" action="form_catch.php" method="post" id="@@id">
+    <svg class="form__close form-close">
+  <use xlink:href="img/sprite.svg#close" />
+</svg>
+
+    <p class="form__title form-title" data-lang="BECOME AN AGENT">BECOME AN AGENT</p>
+    <label class="form__label form-label flex --just-space --align-center">
+        <span class="form__text form-text" data-lang="name">name</span>
+        <input class="form__input form-input" name="name" type="text" pattern="^[A-zА-яЁё]+$" required>
+    </label>
+    <label class="form__label form-label flex --just-space --align-center">
+        <span class="form__text form-text" data-lang="e-mail">e-mail</span>
+        <input class="form__input form-input" name="email" type="email" required>
+    </label>
+    <label class="form__label form-label flex --just-space --align-center">
+        <span class="form__text form-text" data-lang="phone">phone</span>
+        <input class="form__input form-input" name="phone" type="tel" pattern="^[0-9]+[0-9]*$">
+    </label>
+    <button class="form__btn form-btn colored-text" data-lang="send">SEND</button>
+</form>

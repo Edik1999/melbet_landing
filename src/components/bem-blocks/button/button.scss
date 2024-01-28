@@ -1,4 +1,4 @@
-.btn{
+.btn {
     display: block;
     max-width: 380px;
     width: 100%;
@@ -6,10 +6,24 @@
     margin-left: auto;
     padding: 12px 0 11px;
     line-height: 1.2;
+    text-transform: uppercase;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(188deg, var(--main-text-color) 3.26%, var(--main-text-color) 24.11%, #E89D00 42.94%, var(--main-text-color) 66.92%, #F2CC3F 87.31%);
+    background: linear-gradient(260deg, #FFC74B -4.36%, #FFC74B 25.54%, #E89D00 52.53%, #FFC74B 86.93%, #F2CC3F 116.16%);
     color: var(--bg-color);
     cursor: pointer;
+    @include trs(0.2);
+
+    &:hover {
+        transform: scale(1.03);
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+    @media (max-width: 991px) {
+        font-size: 20px;
+    }
 }
 

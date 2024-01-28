@@ -1,0 +1,268 @@
+html[lang="es"] {
+  .banner-form-btn {
+    padding: 14px 12px;
+    gap: 0;
+    font-size: 0.55rem;
+
+    @media (max-width: 1439px) {
+      font-size: 0.64rem;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 0.7rem;
+    }
+
+    @media (max-width: 1024px) {
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 0.83rem;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 1.15rem;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 1.05rem;
+    }
+  }
+
+  .banner__title {
+    max-width: 1273px;
+
+    @media (max-width: 1439px) {
+      font-size: 2.3rem;
+      max-width: 1013px;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 2rem;
+      max-width: 813px;
+    }
+
+    @media (max-width: 1023px) {
+      max-width: 743px;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 1.9rem;
+      max-width: 663px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 1.78rem;
+      max-width: 573px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 1.5rem;
+      max-width: 463px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+      max-width: 383px;
+    }
+
+    @media (max-width: 420px) {
+      max-width: 333px;
+    }
+
+    @media (max-width: 370px) {
+      font-size: 1.18rem;
+      max-width: 283px;
+    }
+  }
+
+  .banner__text {
+    max-width: 1094px;
+  }
+
+  .banner-form-right {
+    padding: 40px 15px 40px;
+
+    @media (max-width: 575px) {
+      padding: 30px 15px;
+    }
+
+    @media (max-width: 390px) {
+      padding: 20px 15px 25px;
+    }
+  }
+
+  .banner-form-left {
+    @media (max-width: 575px) {
+      padding: 15px 15px 210px;
+    }
+  }
+
+  .info-title {
+    @media (max-width: 1200px) {
+      font-size: 2.6rem;
+    }
+  }
+
+  .info-checkout__title {
+    @media (max-width: 1439px) {
+      padding: 23px 85px;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 1.34rem;
+    }
+
+    @media (max-width: 1023px) {
+      font-size: 1.45rem;
+    }
+
+    @media (max-width: 991px) {
+      padding: 23px 15px;
+      font-size: 1.82rem;
+      line-height: 2rem;
+    }
+
+    @media (max-width: 928px) {
+      font-size: 1.71rem;
+    }
+
+    @media (max-width: 880px) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 832px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 789px) {
+      font-size: 1.41rem;
+      line-height: 1.6rem;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 1.43rem;
+    }
+
+    @media (max-width: 727px) {
+      font-size: 1.34rem;
+    }
+
+    @media (max-width: 690px) {
+      font-size: 1.26rem;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: 645px) {
+      font-size: 1.22rem;
+    }
+
+    @media (max-width: 614px) {
+      font-size: 1.15rem;
+    }
+
+    @media (max-width: 586px) {
+      font-size: 1.08rem;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 1.15rem;
+      line-height: 1.2rem;
+    }
+
+    @media (max-width: 546px) {
+      padding: 14px 15px;
+      font-size: 1.08rem;
+    }
+
+    @media (max-width: 519px) {
+      font-size: 1.02rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.14rem;
+    }
+
+    @media (max-width: 473px) {
+      font-size: 1.07rem;
+    }
+
+    @media (max-width: 448px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 424px) {
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 420px) {
+      font-size: 1.06rem;
+    }
+
+    @media (max-width: 399px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 370px) {
+      font-size: 0.94rem;
+    }
+
+    @media (max-width: 352px) {
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 334px) {
+      font-size: 0.83rem;
+    }
+  }
+
+  .howto-title {
+    line-height: 3.63rem;
+
+    @media (max-width: 500px) {
+      line-height: 3rem;
+    }
+
+    @media (max-width: 370px) {
+      font-size: 2.8rem;
+    }
+
+    @media (max-width: 365px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .howto__title:before {
+    @media (max-width: 420px) {
+      top: -200px;
+      left: -155px;
+    }
+  }
+
+  .howto-instruction__text {
+    max-width: 375px;
+  }
+
+  .offer-title .melbet-color {
+    font-size: 3.6rem;
+  }
+
+  .offer-text {
+    letter-spacing: 0.5px;
+  }
+
+  .offer-description-text {
+    letter-spacing: 2.5px;
+  }
+}

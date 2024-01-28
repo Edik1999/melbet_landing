@@ -2,28 +2,38 @@
     <div class="header__logo header-logo flex --align-center">
         <a href="https://melbet.com/" class="header-logo__link">
             @@include('../../bem-blocks/_sprite/_sprite.html',{
-                "class": "header-logo__img",
+                "class": "header-logo__img flex",
                 "id": "logo"
             })
         </a>
-        <picture class="header-logo__flag">
-            <source srcset="../../../img/flag.webp" type="image/webp">
-            <source srcset="../../../img/flag.png" type="image/png">
-            <img src="../../../img/flag.png" alt="Venezuela flag">
+        <picture class="header-logo__flag flex">
+            <source srcset="./img/flag.webp" type="image/webp">
+            <source srcset="./img/flag.png" type="image/png">
+            <img src="./img/flag.png" alt="Venezuela flag">
         </picture>
     </div>
     <div class="header__links header-links">
         <nav class="header-links__nav header-links-nav flex --align-center">
-            <a class="header-links-nav__item header-links-nav-item" href="#banner-form">START EARNING</a>
-            <a class="header-links-nav__item header-links-nav-item" href="#teamCash">ABOUT US</a>
-            <a class="header-links-nav__item header-links-nav-item" href="#howTo">HOW TO START</a>
+            <a class="header-links-nav__item header-links-nav-item" href="#banner-form" data-lang="START EARNING">START EARNING</a>
+            <a class="header-links-nav__item header-links-nav-item" href="#teamCash" data-lang="ABOUT US">ABOUT US</a>
+            <a class="header-links-nav__item header-links-nav-item" href="#howTo" data-lang="HOW TO START">HOW TO START</a>
             <a class="header-links-nav__item header-links-nav-item" href="https://t.me/Latam_TeamCash">
-                <picture class="header-links-nav-item__img">
-                    <source srcset="../../../img/telegram.webp" type="image/webp">
-                    <source srcset="../../../img/telegram.png" type="image/png">
-                    <img src="../../../img/telegram.png" alt="Telegram ico">
-                </picture>
+                <img src="./img/telegram.svg" alt="Telegram ico" class="header-links-nav-item__img">
             </a>
+            <div class="header-links-nav__wrapper">
+                <div class="header-links-nav__select header-links-nav-select flex --align-center">
+                    <span class="header-links-nav-select__value header-links-nav-select-value">EN</span>
+                    <img class="header-links-nav-select__flag header-links-nav-select-flag" src="./img/en.png" alt="English">
+                    @@include('../../bem-blocks/_sprite/_sprite.html', {
+                        "class": "header-links-nav-select__arrow header-links-nav-select-arrow",
+                        "id": "arrow",
+                    })
+                </div>
+                <div class="header-links-nav-select__dropdown header-links-nav-select-dropdown">
+                    <p class="header-links-nav-select-dropdown__option header-links-nav-select-dropdown-option" data-value="en">EN</p>
+                    <p class="header-links-nav-select-dropdown__option header-links-nav-select-dropdown-option" data-value="es">ES</p>
+                </div>
+            </div>
         </nav>
     </div>
 </header>

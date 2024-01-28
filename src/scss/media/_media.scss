@@ -32,9 +32,72 @@
     }
 }
 
+@media (min-width: 1445px) {
+    .info-checkout-features {
+        border-radius: 15px!important;
+    }
+}
+
 @media (max-width: 1439px) {
-    .howto__title {
-        max-width: 580px;
+    .howto {
+        &__title {
+            max-width: 550px;
+
+            &:before {
+                top: -310px;
+                left: -260px;
+            }
+        }
+
+        &__text {
+            margin-right: auto;
+        }
+
+        &__wrapper {
+            max-width: 1156px;
+            box-sizing: content-box;
+            margin: 133px auto 0;
+        }
+    }
+
+    .howto-instruction {
+        &__text {
+            max-width: 240px;
+        }
+    }
+
+    .howto-instruction-arrow {
+        &--first {
+            top: 160px;
+            width: 336px;
+            height: 247px;
+        }
+
+        &--second {
+            top: 90px;
+            left: -300px;
+            width: 273px;
+            height: 167px;
+        }
+
+        &--third {
+            top: 135px;
+            width: 305px;
+            height: 207px;
+        }
+
+        &--fourth {
+            left: -315px;
+            width: 238px;
+            height: 185px;
+        }
+    }
+
+    .offer-description__img {
+        top: 50%;
+        left: 0;
+        width: 33%;
+        transform: translateY(-50%);
     }
 }
 
@@ -49,68 +112,106 @@
 }
 
 @media (max-width: 1350px) {
-    .banner {
-        &__body {
-            padding: 50px 65px;
-            flex-direction: column;
-        }
-
-        &__wrapper {
-            margin-bottom: 40px;
-        }
-
-        &__title, &__text {
-            text-align: center;
-            max-width: 100%;
-        }
-
-        &__text {
-            margin-top: 45px;
-        }
+    .info-wrapper {
+       padding-right: 50px;
     }
 
-    .info, .offer__title {
-        padding: 0 17px;
-    }
-
-    .info {
-        &__wrapper {
-            justify-content: space-around;
-        }
+    .info-checkout__features {
+        margin-right: 50px;
+        width: auto;
     }
 
     .info-checkout-features {
-        justify-content: space-around;
-
-        &__wrapper {
-            flex: unset;
+        &:nth-of-type(2n) {
+            margin-left: 50px;
+            margin-right: 0;
         }
+    }
+
+    .info-checkout-features-wrapper {
+        padding-left: 40px;
+    }
+
+    .info-checkout-features-img {
+        &--first {
+            left: 55px;
+        }
+
+        &--second {
+            left: 125px;
+        }
+
+        &--third {
+            left: 120px;
+        }
+
+        &--fourth {
+            bottom: -70px;
+        }
+    }
+
+    .howto-wrapper {
+        padding: 0 50px;
     }
 
     .offer {
+        &__title {
+            padding: 0 17px;
+        }
+
         &__text {
             max-width: 85%;
         }
+    }
+}
 
-        &__last-chance {
-            max-width: 100%;
+@media (max-width: 1255px) {
+    .howto {
+        &__wrapper {
+            max-width: 1000px;
+        }
+
+        &__instruction {
+            margin-top: 40px;
         }
     }
 
-    .offer-description__text {
-        max-width: 60%;
-    }
+    .howto-instruction-arrow {
+        &--first {
+            top: 230px;
+            left: 20px;
+            width: 175px;
+            height: 127px;
+            transform: rotate(6deg);
+        }
 
-    .offer-last-chance__text {
-        display: inline-block;
-        max-width: 85%;
-        margin: 0 auto;
+        &--second {
+            top: 120px;
+            left: -182px;
+            width: 153px;
+            height: 93px;
+            transform: rotate(-11deg);
+        }
+
+        &--third {
+            top: 155px;
+            left: 30px;
+            width: 175px;
+            height: 127px;
+        }
+
+        &--fourth {
+            top: 100px;
+            left: -180px;
+            width: 158px;
+            height: 125px
+        }
     }
 }
 
 @media (max-width: 1200px) {
-    .info-checkout-features__text {
-        max-width: 65%;
+    .info__main-img {
+        max-width: 470px;
     }
 
     .howto__title {
@@ -120,13 +221,11 @@
             background-size: contain;
             background-repeat: no-repeat;
             top: -330px;
-            left: -250px;
+            left: -270px;
         }
     }
 
     .howto-instruction {
-        margin-top: 90px;
-
         &:first-of-type {
             margin-top: 60px;
         }
@@ -138,12 +237,8 @@
             margin-right: 20px;
         }
 
-        &__description {
-            max-width: 50%;
-        }
-
         &__text {
-            max-width: 255px;
+            max-width: 225px;
         }
 
         &__step:before {
@@ -152,61 +247,94 @@
         }
     }
 
-    .offer__description {
-        padding: 0 100px;
+    .offer {
+        &__description {
+            padding: 60px 100px 0;
+        }
+
+        &__title {
+            margin-top: 80px;
+        }
     }
 
-    .offer {
-        &__last-chance {
-            font-size: 48px;
-            line-height: 60px;
+    .offer-description__img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .howto {
+        &__wrapper {
+            max-width: 924px;
+        }
+    }
+
+    .howto-instruction-arrow {
+        &--first {
+            top: 190px;
+            left: 10px;
+            width: 135px;
+            height: 97px;
+            transform: rotate(24deg);
+        }
+
+        &--second {
+            top: 100px;
+            left: -132px;
+            width: 133px;
+            height: 83px;
+            transform: rotate(-23deg);
+        }
+
+        &--third {
+            top: 145px;
+            left: 10px;
+            width: 125px;
+            height: 87px;
+            transform: rotate(19deg);
+        }
+
+        &--fourth {
+            top: 90px;
+            left: -145px;
+            width: 138px;
+            height: 115px;
+            transform: rotate(-18deg);
         }
     }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1080px) {
     .banner {
         &__body {
-            padding: 50px 50px;
-        }
-
-        &__title {
-            font-size: 53px;
-            line-height: 56px;
-        }
-
-        &__text {
-            margin-top: 35px;
+            padding: 32px 55px 30px;
         }
     }
 
-    .banner-form {
-        &__title {
-            font-size: 34px;
-            line-height: 37px;
-        }
+    .info__title {
+        font-size: 3.6rem;
+        line-height: 3.3rem;
+    }
+}
 
-        &__text {
-            font-size: 20px;
-            line-height: 20px;
-        }
-
+@media (max-width: 1023px) {
+    .info-checkout {
         &__btn {
-            font-size: 34px;
-            line-height: 37px;
+            margin-right: auto;
         }
-    }
 
-    .info-checkout__btn {
-        margin-right: auto;
+        &__wrapper {
+            margin-right: auto;
+        }
+
+        &__form {
+            right: 50%;
+            transform: translateX(50%);
+        }
     }
 
     .howto {
-
-        &__wrapper {
-            padding-right: 17px;
-            padding-left: 17px;
-        }
+        margin-top: 180px;
 
         &__title {
             max-width: 470px;
@@ -214,31 +342,35 @@
             &:before {
                 width: 932px;
                 height: 906px;
-                top: -310px;
+                top: -305px;
+                left: -255px;
             }
-        }
-
-        &__text {
-            max-width: 85%;
-            margin-right: auto;
-        }
-
-        &__instruction {
-            justify-content: space-around;
         }
     }
 
-    .offer {
-        &__last-chance {
-            font-size: 45px;
-            line-height: 58px;
+    .howto-instruction {
+        &__arrow {
+            display: none;
         }
+
+        &__step:before {
+            width: 288px;
+            height: 129px
+        }
+    }
+
+    .offer__title {
+        max-width: 680px;
     }
 }
 
 @media (max-width: 991px) {
-    .main {
-        overflow: hidden;
+    .banner-form {
+        &__title,
+        &__btn {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
     }
 
     .info {
@@ -249,12 +381,16 @@
 
         &__text {
             margin-top: 50px;
-            max-width: 85%;
+            max-width: 100%;
         }
 
         &__text-wrapper {
             align-items: center;
         }
+    }
+
+    .info-wrapper {
+        padding-left: 50px;
     }
 
     .info-checkout__title {
@@ -263,22 +399,41 @@
     }
 
     .info-checkout-features {
-        &:first-of-type {
-            margin-top: 70px;
+        padding-right: 40px;
+
+        &__number {
+            font-size: 230px;
+            line-height: 205px;
         }
 
         &__img {
-            max-width: 160px;
+            width: 190px;
+        }
+    }
 
-            &:before {
-                width: 202px;
-                height: 114px;
-            }
+    .info-checkout-features-img {
+        &--first {
+            bottom: -25px;
+        }
+
+        &--second {
+            left: 95px;
+            bottom: -10px;
+        }
+
+        &--third {
+            left: 85px;
+            bottom: -30px;
+        }
+
+        &--fourth {
+            left: 100px;
+            bottom: -35px;
         }
     }
 
     .howto{
-        margin: 190px auto 0;
+        margin-top: 160px;
 
         &__title {
             max-width: 425px;
@@ -287,117 +442,220 @@
                 width: 832px;
                 height: 806px;
                 top: -270px;
+                left: -220px;
+            }
+        }
+    }
+
+    .howto-instruction {
+        &__step:before {
+            top: -10px;
+            width: 258px;
+            height: 119px;
+        }
+
+        &__text {
+            max-width: 185px;
+        }
+    }
+
+    .offer {
+        &__description {
+            max-width: 85%;
+            padding: 0;
+        }
+
+        &__btn {
+            margin-top: 10px;
+        }
+    }
+
+    .offer-description {
+        margin-top: 40px;
+
+        &__text {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        &__img {
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 420px;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .info-checkout__title {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .banner {
+        &__form {
+            flex-direction: column;
+            max-width: 410px;
+        }
+    }
+
+    .banner-form-left {
+        padding: 28px 20px 250px;
+    }
+
+    .banner-form {
+        &__right {
+            width: auto;
+            right: -14px;
+            left: -14px;
+            bottom: 20px;
+            top: unset;
+        }
+
+        &__text {
+            margin-top: 0;
+        }
+    }
+
+    .banner-form-right {
+        padding: 40px 25px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 865px) {
+    .banner {
+        &__title {
+            font-size: 2.1rem;
+            line-height: 2.6rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .info-checkout-features-text {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        &__title {
+            font-size: 1.8rem;
+            line-height: 2.3rem;
+        }
+    }
+
+    .info-checkout {
+        &__features {
+            margin-top: 25px;
+        }
+
+        &__title {
+            font-size: 1rem;
+            line-height: 1.2rem;
+        }
+    }
+
+    .info-checkout-title {
+        padding: 14px;
+    }
+
+    .info-checkout-features {
+        padding-right: 25px;
+        gap: 100px;
+
+        &:first-of-type {
+            margin-top: 55px;
+        }
+
+        &__number {
+            font-size: 180px;
+            line-height: 185px;
+        }
+
+        &__img {
+            width: 160px;
+        }
+    }
+
+    .info-checkout-features-wrapper {
+        padding-left: 25px;
+    }
+
+    .info-checkout-features-img {
+        &--first {
+            left: 35px;
+        }
+
+        &--second {
+            left: 70px;
+            bottom: 0px;
+        }
+
+        &--third {
+            left: 60px;
+            bottom: -15px;
+        }
+
+        &--fourth {
+            left: 65px;
+            bottom: -20px;
+        }
+    }
+
+    .howto{
+        margin-top: 140px;
+
+        &__title {
+            max-width: 405px;
+
+            &:before {
+                top: -280px;
+                left: -230px;
+            }
+        }
+    }
+
+    .howto-instruction {
+        &__text {
+            max-width: 176px;
+        }
+
+        &__step:before {
+            width: 248px;
+            height: 109px;
+        }
+    }
+
+    .offer__btn {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 680px) {
+    .info__text {
+        max-width: 100%;
+    }
+
+    .howto {
+        &__title {
+            max-width: 380px;
+
+            &:before {
+                width: 772px;
+                height: 746px;
+                top: -250px;
                 left: -210px;
             }
         }
     }
 
     .howto-instruction {
-        margin-top: 130px;
-
-        &__step:before {
-            top: -10px;
-            width: 308px;
-            height: 159px;
-        }
-    }
-
-    .offer__title {
-        margin-top: 110px;
-    }
-
-    .offer__description {
-        max-width: 85%;
-        padding: 0;
-    }
-
-    .offer-description {
-        margin-top: 40px;
-
-        &__img {
-            max-width: 164px;
-            max-height: 632px;
-            top: 0;
-
-            &:before {
-                left: 0px;
-                width: 156px;
-                height: 383px;
-            }
-        }
-
-        &__text {
-            max-width: 70%;
-        }
-    }
-
-    .btn {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 767px) { 
-    .banner {
-        &__body {
-            padding: 35px 35px;
-        }
-
-        &__wrapper {
-            margin-bottom: 35px;
-        }
-
-        &__title {
-            font-size: 43px;
-            line-height: 46px;
-        }
-
-        &__text {
-            margin-top: 30px;
-        }
-    }
-
-    .info-checkout__title {
-        padding: 14px 0;
-    }
-
-    .info-checkout-features:first-of-type {
-        margin-top: 55px;
-    }
-
-    .howto {
-        &__wrapper {
-            margin-top: 100px;
-        }
-
-        &__instruction {
-            justify-content: space-between;
-        }
-    }
-
-    .offer {
-        &__last-chance {
-            font-size: 36px;
-            line-height: 46px;
-        }
-    }
-}
-
-@media (max-width: 680px) {
-    .howto__title {
-        max-width: 370px;
-
-        &:before {
-            width: 772px;
-            height: 746px;
-            top: -260px;
-            left: -220px;
-        }
-    }
-
-    .howto-instruction {
-        flex-direction: column;
-        margin-top: 70px;
-
         &__number {
             font-size: 85px;
             line-height: 90px;
@@ -405,77 +663,50 @@
         }
 
         &__text {
-            max-width: 206px;
+            max-width: 166px;
         }
 
         &__step:before {
-            top: -20px;
-            width: 288px;
-            height: 149px;
-        }
-
-        &__description {
-            margin-top: 30px;
-            max-width: 85%;
+            width: 238px;
+            height: 99px
         }
     }
+}
 
-    .offer-description {
-        &__img {
-            display: none;
-        }
-
-        &__text {
-            max-width: 100%;
-        }
+@media (max-width: 620px) {
+    .banner__body {
+        padding: 20px;
     }
 }
 
 @media (max-width: 575px) {
     .banner {
-        &__body {
-            padding: 30px 30px;
-        }
-
-        &__wrapper {
-            margin-bottom: 25px;
-        }
-
         &__title {
-            font-size: 34px;
-            line-height: 37px;
+            font-size: 1.6rem;
+            line-height: 2.1rem;
         }
 
         &__text {
-            margin-top: 20px;
-        }
-
-        &__form {
-            width: 100%;
-            padding: 20px 26px 26px 10px;
+            font-size: 0.9rem;
         }
     }
 
-    .banner-form {
-        &__input, &__btn {
-            width: 75%;
-        }
+    .banner-form-left {
+        gap: 13px;
+        padding: 15px 15px 190px;
+    }
 
-        &__input {
-            height: 45px;
-            padding: 10px 12px;
-            font-size: 24px;
-        }
+    .banner-form-input {
+        padding: 10px 15px;
+    }
 
-        &__btn {
-            font-size: 28px;
-            line-height: 32px;
-        }
+    .banner-form-right {
+        padding: 20px 45px 25px;
+        gap: 20px;
+    }
 
-        &__title {
-            font-size: 28px;
-            line-height: 32px;
-        }
+    .banner-form__right {
+        bottom: 15px;
     }
 
     .info {
@@ -483,34 +714,45 @@
 
         &__text {
             margin-top: 40px;
-            max-width: 95%;
         }
+    }
+
+    .info-wrapper {
+        padding: 0 30px;
     }
 
     .info-checkout {
         &__title {
-            padding: 14px;
+            margin-left: 30px;
+            margin-right: 30px;
         }
 
         &__features {
             flex-direction: column;
+            margin-right: 30px;
         }
     }
 
     .info-checkout-features {
-        &__img {
-            max-width: 190px;
+        padding-left: 25px;
+        gap: 0;
 
-            &:before {
-                width: 232px;
-                height: 144px;
-            }
+        &:nth-of-type(2n) {
+            margin-left: 30px;
         }
+    }
 
-        &__text {
-            margin-top: 30px;
-            max-width: 90%;
-        }
+    .info-checkout-wrapper {
+        padding: 0 15px;
+    }
+
+    .info-checkout-features-wrapper {
+        padding-left: 0;
+    }
+
+    .info-checkout-features-img {
+        right: 0;
+        bottom: 0;
     }
 
     .howto {
@@ -519,27 +761,52 @@
         }
     }
 
+    .howto-wrapper {
+        padding: 0 30px;
+    }
+
+    .howto-instruction {
+        &__description {
+            margin-left: 50px;
+        }
+    }
+
     .offer {
         margin-top: 75px;
 
         &__title {
-            margin-top: 80px;
-        }
+            margin-top: 60px;
+            font-size: 3.5rem;
 
-        &__last-chance {
-            margin-top: 80px;
-            font-size: 32px;
-            line-height: 42px;
+            .melbet-color {
+                font-size: 4.3rem;
+            }
         }
+    }
+
+    .offer-description {
+        margin-top: 30px;
+
+        &__text {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .info-checkout__title {
+        font-size: 0.95rem;
+        line-height: 1.2rem;
     }
 }
 
 @media (max-width: 500px) {
     .howto {
-        margin: 140px auto 0;
+        margin-top: 120px;
 
         &__title {
-            max-width: 315px;
+            max-width: 340px;
 
             &:before {
                 width: 672px;
@@ -549,146 +816,256 @@
             }
         }
     }
+
+    .howto-title {
+        line-height: 4.4rem;
+    }
+
+    .howto-instruction {
+        &__description {
+            margin-left: 30px;
+        }
+
+        &__text {
+            max-width: 150px;
+        }
+
+        &__step:before {
+            width: 218px;
+            height: 89px;
+        }
+    }
+
+    .info-checkout {
+        &__title {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
+    .offer__title {
+        font-size: 3.2rem;
+
+        .melbet-color {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .howto {
+        &__instruction {
+            margin-top: 20px;
+        }
+    }
+
+    .howto-instruction {
+        &:first-of-type {
+            margin-top: 40px;
+        }
+    }
+
+    .info-checkout__title {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
 }
 
 @media (max-width: 420px) {
-    .banner {
-        &__body {
-            padding: 20px;
-            border-radius: 27px;
-        }
-
-        &__title {
-            font-size: 26px;
-            line-height: 31px;
-        }
-
-        &__form {
-            padding: 16px 20px 20px 10px;
-        }
+    .banner__text {
+        margin-top: 25px;
     }
 
     .banner-form {
-        border-radius: 25px;
-
-        &__title, &__btn {
-            font-size: 23px;
-            line-height: 26px;
-        }
-
-        &__input {
-            height: 40px;
-            padding: 8px 10px;
-            font-size: 18px;
-        }
-
-        &__btn {
-            height: 42px;
+        &__btn,
+        &__title {
+            font-size: 1.2rem;
+            line-height: 1.4rem;
         }
     }
 
-    .info-checkout-features__img {
-        max-width: 170px;
+    .info-checkout-features {
+        &:nth-of-type(odd) {
+            align-items: flex-start;
+        }
 
-        &:before {
-            width: 212px;
-            height: 124px;
+        &:nth-of-type(even) {
+            align-items: flex-end;
+        }
+
+        &:first-of-type {
+            margin-top: 30px;
+        }
+
+        &__number {
+            font-size: 140px;
+            line-height: 135px;
+        }
+
+        &__img {
+            width: 120px;
+        }
+    }
+
+    .info-checkout-features-img {
+        &--second,
+        &--fourth {
+            left: -130px;
         }
     }
 
     .howto {
-        margin: 125px auto 0;
+        margin-top: 100px;
 
         &__title {
-            max-width: 265px;
+            max-width: 295px;
 
             &:before {
                 width: 562px;
                 height: 536px;
-                top: -180px;
-                left: -160px;
+                top: -175px;
+                left: -140px;
             }
         }
 
         &__wrapper {
             margin-top: 70px;
         }
-
-        &__text {
-            max-width: 95%;
-        }
     }
 
     .howto-instruction {
         &__description {
-            max-width: 100%;
+            margin-left: 0;
+        }
+
+        &__text {
+            max-width: 130px;
+        }
+
+        &__step:before {
+            width: 198px;
         }
     }
 
     .offer {
-        &__text, &__description {
-            max-width: calc(100% - 34px);
-        }
-
-        &__btn {
-            margin: 60px 17px 0;
-            width: calc(100% - 34px);
-        }
-    }
-
-    .offer-last-chance {
-        font-size: 24px;
-        line-height: 34px;
-        margin-top: 60px;
-
-        &:before {
-            top: -10px;
-        }
-
-        &__text {
+        &__text,
+        &__description {
             max-width: calc(100% - 34px);
         }
     }
 }
 
-@media (max-width: 380px) {
-    .banner {
-        &__form {
-            padding: 16px 16px 16px 10px;
+@media (max-width: 390px) {
+    .banner__title {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+
+    .banner-form-right {
+        padding: 20px 25px 25px;
+    }
+
+    .banner-form__text {
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .info-wrapper {
+        padding: 0 15px;
+    }
+
+    .info-checkout {
+        &__title {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        &__features {
+            margin-top: 20px;
+            margin-right: 15px;
         }
     }
 
-    .banner-form {
-        &__text {
-            font-size: 16px;
-            line-height: 16px;
+    .info-checkout-features {
+        padding: 0 15px;
+
+        &:nth-of-type(2n) {
+            margin-left: 15px;
         }
+
+        &__number {
+            font-size: 120px;
+            line-height: 115px;
+        }
+
+        &__img {
+            width: 100px;
+        }
+    }
+
+    .info-checkout-features-img {
+        &--second,
+        &--fourth {
+            left: -110px;
+        }
+
+        &--first,
+        &--third {
+            left: 45px;
+        }
+    }
+
+    .howto-wrapper {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 365px) {
+    .info-checkout-title {
+        padding: 10px 55px;
+    }
+
+    .howto {
+        margin-top: 90px;
 
         &__title {
-            margin-bottom: 16px;
-        }
+            font-size: 3.4rem;
+            line-height: 3.8rem;
+            max-width: 255px;
 
-        &__label {
-            margin-bottom: 12px;
-
-            &:last-of-type {
-                margin-bottom: 16px;
+            &:before {
+                top: -190px;
+                left: -160px;
             }
         }
+    }
 
-        &__title, &__btn {
-            font-size: 23px;
-            line-height: 26px;
-        }
+    .howto-instruction__number {
+        font-size: 65px;
+        line-height: 70px;
+        margin-right: 10px;
+    }
 
-        &__input {
-            height: 40px;
-            padding: 8px 10px;
-            font-size: 18px;
-        }
+    .offer__title {
+        font-size: 2.7rem;
+        line-height: 3.5rem;
 
-        &__btn {
-            height: 42px;
+        .melbet-color {
+            font-size: 3.5rem;
+            line-height: 3.7rem;
         }
+    }
+
+    .offer-description__text {
+        font-size: 1.35rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width: 345px) {
+    .banner__title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
     }
 }
